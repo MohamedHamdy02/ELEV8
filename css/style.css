@@ -1,0 +1,249 @@
+
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-----N A V I G A T I O N----B A R---S T A R T----*/
+.navbar {
+    background-color: #545454;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+}
+.nav-links:focus{
+    background-color: #616161;
+    border-radius: 12px;
+}
+.nav-settings i {
+    cursor: pointer;
+}
+.box {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #A5A5A5;
+}
+.box-number {
+    top: -5px;
+    left: 25px;
+    width: 19px;
+    height: 19px;
+    background-color: #212121;
+}
+.box-number p {
+    font-size: .7rem;
+}
+/* -- N A V I G A T I O N----B A R---E N D -- */
+
+/* ---------S I D E---M E N U---S T A R T------ */
+.title {
+    background-color: #FCFCFC;
+    border: 1px solid #EDEDED;
+    border-radius: 4px 21px 21px 4px;
+}
+.menu-content {
+    background-color: #E8E8E8;
+    border-radius: 0px 16px 16px 0px;
+}
+.nav-item .after:focus:after {
+    content: "";
+    position: absolute;
+    right: -24px;
+    top: -1px;
+    width: 27px;
+    height: 61px;
+    background-image: url(../imgs/Subtract.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.menu-content li a {
+    color: #545454;
+}
+.custom-text {
+    text-align: left;
+}
+.nav-link {
+    transition: all 0s;
+}
+.nav-link:focus, .nav-link:hover {
+    background: white;
+    border-radius: 10px 26px 26px 10px;
+    color: black;
+}
+.menu-content a:focus svg path {
+    fill: gray !important;
+}
+.menu-content a:focus .svg-path {
+    fill: white !important;
+    opacity: 1;
+}
+.menu-content .active-color:focus{
+    background: #545454 !important;
+    color: white;
+    border-radius: 18px 0px 0px 18px;
+}
+/*---------S I D E---M E N U---S T A R T------*/
+
+/*-----J O B----A N A L S I S-----C O N T E N T----S T A R T-----*/
+.section-title {
+    background-color: #F9F9F9;
+    border-radius: 42px;
+}
+.section-title p {
+    color: #A1A5B7 !important;
+}
+.date-order .fa-arrow-up {
+    background: #F3F3F3;
+    color: #D7D7D7;
+    border-radius: 4px 0px 0px 4px;
+    cursor: pointer;
+}
+.date-order .fa-arrow-down {
+    background: #AbAbAb;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+.nav-tabs {
+    border-bottom: 15px solid #FAFAFA !important;
+}
+.nav-tabs .nav-link.active {
+    background-color: #FAFAFA;
+}
+.list-group {
+    background: #FFFFFF;
+    border: 1px dashed #DFDFDF;
+    border-radius: 12px;
+}
+.list-group .code {
+    background: #DFDFDF;
+    color: #464646;
+    border: 1px solid #DFDFDF;
+    border-radius: 12px 0px;
+    top: 0;
+    left: 0;
+}
+.dropstart {
+    position: absolute;
+    right: 1px;
+    bottom: 60px;
+    border-radius: 0px 12px;
+    z-index: 1;
+}
+.dropstart .dots {
+    background-image: url('../imgs/Group\ 1297.png');
+    width: 30px;
+    height: 30px;
+    border-radius: 0px 12px !important;
+}
+.list-group img {
+    top: 0;
+    right: 0;
+}
+.list-group-item-action:focus, .list-group-item-action:hover {
+    background-color: white;
+}
+.edit-delete-box {
+    z-index: 1;
+    right: 0;
+    bottom: -24px;
+    background: #FAFAFA;
+    border: 1px solid #F3F3F3;
+    border-radius: 0px 0px 6px 6px;
+}
+.edit {
+    border-bottom: 3px solid #F3F3F3;
+}
+.footer-elements button {
+    background: #E4E4E4;
+    border-radius: 12px;
+}
+.footer-pages .pagination {
+    --bs-pagination-border-color: none;
+}
+/*-----J O B----A N A L S I S-----C O N T E N T----E N D-----*/
+@media only screen and (min-width: 767px) and (max-width: 1189px) {
+    .col-md-4 {
+        width: 100%;
+    }
+    .menu-content .custom-background{
+        margin-left: 0 !important;
+    }
+    .col-md-8 {
+        width: 100%;
+    }
+    .nav-item{
+        margin: .8rem 0 !important;
+    }
+}
+@media only screen and (max-width: 766px) {
+    .container-fluid {
+        font-size: 15px !important;
+    }
+    .nav-item {
+        margin-bottom: .5rem;
+    }
+    .nav-img {
+        margin-bottom: 1rem;
+    }
+    .navbar-collapse {
+        margin-bottom: 1rem;
+    }
+    .nav-links {
+        font-size: 15px;
+        padding: .2rem .8rem !important;
+    }
+    .box {
+        width: 35px;
+        height: 35px;
+    }
+    .box-number p {
+        font-size: 10px;
+    }
+    .welcome-box h6 {
+        font-size: 12px !important;
+    }
+    .welcome-box h4 {
+        font-size: 13px !important;
+    }
+    .nav-settings{
+        margin-left: 2.3rem;
+    }
+    .nav-settings .fa-caret-down {
+        font-size: 10px !important;
+        margin-left: 1rem !important;
+    }
+    .title .custom{
+        font-size: 10.5px !important;
+    }
+    .row {
+        margin: auto;
+    }
+    .date-order i {
+        font-size: 11px !important;
+    }
+    .menu-content .custom-background {
+        font-size: 14px !important;
+    }
+    .dropstart {
+        bottom: 57px;
+    }
+    .edit-delete-box{
+        font-size: 8px;
+    }
+    .footer-elements button {
+        font-size: 12px;
+    }
+    .footer-elements .dropdown-menu {
+        font-size: 12px;
+    }
+    .page-item .page-link {
+        font-size: 12px;
+    }
+}
